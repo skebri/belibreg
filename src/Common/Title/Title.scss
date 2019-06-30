@@ -1,0 +1,14 @@
+.title-class {
+  font-family: Roboto Slab;
+  font-size: 35px;
+  line-height: 53px;
+  color: #9C9FA5;
+  margin: 150px auto;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .title-class-h1 {
+    padding-bottom: 10px;
+  }
+}

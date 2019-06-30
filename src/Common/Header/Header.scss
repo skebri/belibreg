@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 113px;
+  position: relative;
+  z-index: 2;
+  .logo-area {
+    padding-left: 25px;
+  //height: 710px;
+  //background-color: #F0F1F5;
+  //width: 10px;
+
+  }
+
+  nav {
+    padding-right: 10%;
+    background-size: cover;
+    flex: 1;
+    text-align: right;
+  //background-color: #F0F1F5;
+  //height: 113px;
+
+    a {
+      text-decoration: none;
+      width: 89px;
+      height: 24px;
+      font-family: Roboto Slab;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;
+      color: #000;
+      padding: 25px;
+    }
+    a:hover {
+      border-bottom: 2px solid #000;
+      font-weight: bold;
+    }
+  }
+}
