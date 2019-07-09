@@ -40,3 +40,7 @@
   width: 834px;
   margin: 0 auto;
 }
+
+@mixin for-ipad {
+  @media only screen and (max-width: 768px) { @content; }
+}
