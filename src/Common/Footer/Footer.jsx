@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import facebook from '../../assets/facebook.png';
-import twitter from '../../assets/twitter.png';
-import yt from '../../assets/yt.png';
-import logo from '../../assets/logo.png';
+import instagram from '../../assets/instagram.png';
+import logo from '../../assets/logo-white.png';
 import './Footer.scss';
 
 const Footer = () =>
@@ -16,8 +15,7 @@ const Footer = () =>
     <h1 className="kontakt-radno">Radno vreme od 08:00 - 16:00</h1>
     <div className="kontakt-about">
       <p>Email: prodaja@belibreg.com</p>
-      <p>Telefon: +38164/2222-333</p>
-      <p>Fax: +38164/2222-333</p>
+      <p>Telefon: +38163/515-154</p>
     </div>
     <p className="invest">Investitor: Inovation Team Co d.o.o.</p>
   </div>
@@ -35,9 +33,8 @@ const Footer = () =>
     <div className="footer-social">
       <img className="footer-logo" src={logo} alt="logo"/>
       <div className="social-icons">
-        <img src={facebook} alt=""/>
-        <img src={twitter} alt=""/>
-        <img src={yt} alt=""/>
+        <a href="https://mobile.facebook.com/BeliBregRuma/about/?ref=page_internal&_rdc=1&_rdr"><img src={facebook} alt=""/></a>
+        <a href="#"><img src={instagram} alt=""/></a>
       </div>
     </div>
    </div>

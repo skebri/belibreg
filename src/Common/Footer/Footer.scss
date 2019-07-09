@@ -1,17 +1,49 @@
+@import "../../styles/common/_helpers.scss";
+
 .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   position: relative;
   z-index: 1;
   font-family: Roboto Slab;
+  margin-top: 150px;
+
+  @include for-phone {
+    margin-top: 0;
+  }
+
   .kontakt {
     width: 834px;
     height: 350px;
     background: #F0F0F0;
-    margin: 150px auto 0px auto;
     padding-top: 100px;
     padding-left: 100px;
     position: relative;
     bottom: -150px;
     z-index: 2;
+
+    @include for-phone-landscape {
+      width: 634px;
+    }
+
+    @include for-iPad {
+      width: 600px;
+    }
+
+    @include for-sm-screen {
+      width: 500px;
+      height: 300px;
+      padding-top: 50px;
+    }
+
+    @include for-phone {
+      width: 260px;
+      padding-left: 20px;
+      padding-top: 50px;
+    }
+
     .kontakt-h1 {
       display: inline-block;
       font-size: 22px;
@@ -22,6 +54,10 @@
       font-size: 30px;
       line-height: 40px;
       color: #4E5054;
+
+      @include for-phone {
+        font-size: 18px;
+      }
     }
     .kontakt-about {
       margin-top: 20px;
@@ -30,6 +66,10 @@
         line-height: 24px;
         color: #929299;
         padding-bottom: 15px;
+
+        @include for-phone {
+          font-size: 14px;
+        }
       }
     }
     .invest {
@@ -37,17 +77,30 @@
       line-height: 24px;
       color: #929299;
       margin-top: 50px;
+
+      @include for-phone {
+        font-size: 14px;
+      }
     }
   }
   .footer-content{
-    padding: 0px 70px 15px 70px;
     background: rgba(0, 0, 0, 0.7);
     height: 500px;
+    width: 100%;
     .footer-flex {
       display: flex;
       justify-content: space-between;
       padding-top: 197px;
       margin: 0 120px;
+
+      @include for-phone-landscape {
+        margin: 0 30px;
+      }
+
+      @include for-phone {
+        margin: 0 20px;
+      }
+
       .footer-nav {
         display: flex;
         flex-direction: column;
@@ -64,6 +117,11 @@
           font-size: 18px;
           line-height: 24px;
           padding-left: 5px;
+
+          @include for-phone {
+            font-size: 12px;
+            line-height: 12px;
+          }
         }
         .footer-link:hover {
           border-left: 2px solid #fff;
@@ -71,16 +129,36 @@
         }
       }
       .footer-social {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
         text-align: right;
-        margin-top: 110px;
+        margin-top: 15px;
         .footer-logo {
           margin-bottom: 40px;
+          width: 250px;
+          height: 85px;
+
+          @include for-phone {
+            width: 150px;
+            height: 55px;
+          }
         }
         .social-icons {
-          position: relative;
-          right: -4px;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          width: 120px;
+          margin-right: 21px;
+
+          @include for-phone {
+            margin-right: 11px;
+          }
+
           img {
-            padding-left: 20px;
+            width: 50px;
+            height: 50px;
           }
         }
       }
@@ -93,5 +171,10 @@
       color: #fff;
       display: block;
       margin-top: 10px;
+
+      @include for-phone {
+        font-size: 14px;
+        margin-top: 50px;
+      }
   }
 }

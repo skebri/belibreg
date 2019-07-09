@@ -4,8 +4,10 @@ import Header from '../../../Common/Header/Header';
 import Footer from '../../../Common/Footer/Footer';
 import Title from '../../../Common/Title/Title';
 import pic1 from '../../../assets/pic1.png';
-import pic2 from '../../../assets/povezanost.png';
-import pic3 from '../../../assets/spec.png';
+import pic2 from '../../../assets/pic2.png';
+import pic3 from '../../../assets/pic3.png';
+import povezanost from '../../../assets/povezanost.png';
+import spec from '../../../assets/spec.png';
 import Image from 'react-image-resizer';
 
 class oprojektu extends React.Component {
@@ -49,15 +51,13 @@ changePic = e =>
         </div>
 
           <p className="slider-text about">
-             Sledeći osnovnu ideju, kreirali smo bezbedan i luksuzan stambeni ambijent,
-             satkan od prirodnih materijala u kojem preovlađuju kamen i drvo, dok velike staklene površine
-             naglašavaju eleganciju životnog prostora i ispunjavaju ga svetlošću. Sledeći osnovnu ideju,
-             kreirali smo bezbedan i luksuzan stambeni ambijent, satkan od prirodnih materijala u kojem preovlađuju
-             kamen i drvo, dok velike staklene površine naglašavaju eleganciju životnog prostora i ispunjavaju ga svetlošću.
+             Beli Breg rezidencijalni kompleks je smešten u novom centru Rume na uglu
+             ulica Matije Gubca 17. Lokacija je izuzetno dobro povezana sa centrom grada
+             i glavnim ulicama grada koje vode ka izlazu.
           </p>
 
           <div className="povezanost">
-            <img src={pic2} alt="povezanost"/>
+            <img src={povezanost} alt="povezanost"/>
             <div className="povez-text">
               <div>
                 <h1 className="descrip">POVEZANOST</h1>
@@ -82,7 +82,7 @@ changePic = e =>
             <h1 className="title">NOVI KOMPLEKS<br /> BELI BREG - RUMA</h1>
             </div>
             <div className="spec-img">
-              <img src={pic3} alt="spec"/>
+              <img src={spec} alt="spec"/>
             </div>
           </div>
           <div className="spec-p">

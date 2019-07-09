@@ -1,4 +1,34 @@
+@import "../../styles/common/_helpers.scss";
+
 #map {
   width: 477px;
   height: 390px;
+
+  @include for-phone-landscape {
+    width: 397px;
+  }
+
+  @include for-iPad {
+    width: 390px;
+  }
+
+  @include for-sm-screen {
+    width: 312px;
+  }
+
+  @include for-phone {
+    width: 411px;
+  }
+
+  @include for-iphone {
+    width: 375px;
+  }
+
+  @include for-sm-phone {
+    width: 360px;
+  }
+
+  @include for-sm-iphone {
+    width: 320px;
+  }
 }

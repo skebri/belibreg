@@ -1,3 +1,5 @@
+@import "../../styles/common/_helpers.scss";
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -5,6 +7,10 @@
   height: 113px;
   position: relative;
   z-index: 2;
+
+  @include for-phone {
+    height: 120px;
+  }
   .logo-area {
     padding-left: 25px;
   //height: 710px;
@@ -14,10 +20,36 @@
   }
 
   nav {
-    padding-right: 10%;
+    padding-right: 5%;
     background-size: cover;
     flex: 1;
     text-align: right;
+
+    @include for-md-bigger-screen {
+      padding-right: 3%;
+    }
+
+    @include for-sm-screen {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding-top: 120px;
+      padding-left: 430px;
+    }
+
+    @include for-phone {
+      padding-left: 170px;
+      padding-top: 90px;
+    }
+
+    @include for-iphone {
+      padding-left: 140px;
+    }
+
+    @include for-sm-phone {
+      padding-left: 120px;
+    }
   //background-color: #F0F1F5;
   //height: 113px;
 
@@ -32,6 +64,20 @@
       line-height: 24px;
       color: #000;
       padding: 25px;
+
+      @include for-phone-landscape {
+        padding: 15px;
+      }
+
+      @include for-sm-screen {
+        padding: 5px;
+        font-size: 11px;
+      }
+
+      @include for-phone {
+        width: 140px;
+        padding: 0px;
+      }
     }
     a:hover {
       border-bottom: 2px solid #000;

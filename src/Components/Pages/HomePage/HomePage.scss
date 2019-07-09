@@ -1,3 +1,5 @@
+@import "../../../styles/common/_helpers.scss";
+
 .home-page {
   font-family: Roboto Slab;
   height: 5178px;
@@ -11,10 +13,30 @@
     top: -113px;
     z-index: 1;
     box-shadow: 0 7px 2px -2px #909090;
+
+    @include for-iPad {
+      background-position: top;
+    }
+
+    @include for-phone {
+      width: auto;
+      top: -120px;
+      height: 700px;
+    }
   }
   .bg-content {
     text-align: left;
     padding: 100px;
+
+    @include for-iPad {
+      padding-left: 20px;
+    }
+
+    @include for-iphone {
+      padding-bottom: 31px;
+      padding-right: 0px;
+    }
+
     .bg-title {
       margin-top: 490px;
       width: 825px;
@@ -23,7 +45,30 @@
       font-size: 48px;
       line-height: 63px;
       color: #FFF;
+
+      @include for-iPadPro {
+        width: 100%;
+        font-size: 40px;
+      }
+
+      @include for-phone-landscape {
+        font-size: 29px;
+      }
+
+      @include for-iPad {
+        font-size: 26px;
+      }
+
+      @include for-sm-screen {
+        line-height: 45px;
+      }
+
+      @include for-phone {
+        margin-top: 360px;
+        line-height: 35px;
+      }
     }
+
     .bg-button {
       display: block;
       margin-top: 80px;
@@ -49,6 +94,14 @@
 
   .content-2 {
     display: flex;
+    margin-bottom: 80px;
+
+    @include for-phone {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
     .content-2-text {
 
       text-align: left;
@@ -63,14 +116,27 @@
       .content-2-par {
         width: 400px;
         height: 120px;
+
+        @include for-sm-screen {
+          width: 320px;
+        }
       }
     }
     .content-2-img {
-      background: url('../../../assets/pic2.png');
-      width: 450px;
-      height: 350px;
+      background: url('../../../assets/logo1.png');
+      background-repeat: no-repeat;
+      width: 434px;
+      background-size: contain;
+      background-position: center;
 
-      box-shadow: 0 7px 2px -2px gray;
+      @include for-phone {
+        height: 192px;
+        width: 374px;
+      }
+
+      @include for-sm-phone {
+        width: 335px;
+      }
     }
   }
 
@@ -79,6 +145,11 @@
     .lamele-title {
       margin-left: 100px;
       margin-bottom: 30px;
+
+      @include for-sm-screen {
+        margin-left: 20px;
+      }
+
       .lamele-h1 {
         width: 91px;
         height: 29px;
@@ -88,7 +159,13 @@
     .lamele-content {
       display: flex;
       width: 100%;
-      justify-content: space-around;
+
+      @include for-phone {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
       .lamela-title {
         height: 33px;
         font-size: 25px;
@@ -97,7 +174,12 @@
         margin-top: 90px;
         margin-bottom: 20px;
         margin-left: 40px;
+
+        @include for-iPad {
+          margin-left: 20px;
+        }
       }
+
       .lamela-link {
         text-decoration: none;
         width: 114px;
@@ -107,6 +189,22 @@
         line-height: 26px;
         color: #FFFFFF;
         margin-left: 40px;
+
+        @include for-phone-landscape {
+          font-size: 12px;
+        }
+
+        @include for-iPad {
+          margin-left: 20px;
+        }
+
+        @include for-sm-screen {
+          font-size: 8px;
+        }
+
+        @include for-phone {
+          font-size: 20px;
+        }
       }
       .lamela-link:hover {
         color: #000;
@@ -119,125 +217,270 @@
       }
       .lamele-item-1{
         background: url('../../../assets/lamela1.png') no-repeat;
-        width: 24.8%;
+        width: 25%;
         height: 200px;
         background-size: cover;
         padding-top: 293px;
+
+        @include for-phone-landscape {
+          padding-top: 193px;
+        }
+
+        @include for-phone {
+          width: 100%;
+        }
       }
       .lamele-item-2{
         background: url('../../../assets/lamela2.png') no-repeat;
-        width: 24.8%;
+        width: 25%;
         height: 200px;
         background-size: cover;
         padding-top: 293px;
+
+        @include for-phone-landscape {
+          padding-top: 193px;
+        }
+
+        @include for-phone {
+          width: 100%;
+        }
       }
       .lamele-item-3{
         background: url('../../../assets/lamela3.png') no-repeat;
-        width: 24.8%;
+        width: 25%;
         height: 200px;
         background-size: cover;
         padding-top: 293px;
+
+        @include for-phone-landscape {
+          padding-top: 193px;
+        }
+
+        @include for-phone {
+          width: 100%;
+        }
       }
       .lamele-item-4{
         background: url('../../../assets/lamela4.png') no-repeat;
-        width: 24.8%;
+        width: 25%;
         height: 200px;
         background-size: cover;
         padding-top: 293px;
+
+        @include for-phone-landscape {
+          padding-top: 193px;
+        }
+
+        @include for-phone {
+          width: 100%;
+        }
       }
     }
   }
 
-  .projekat {
+  .info-section{
     display: flex;
-    margin: 0px auto;
-    width: 890px;
-    .projekat-img {
-      background: url('../../../assets/projekat-img.png') no-repeat;
-      width: 390px;
-      height: 477px;
-      position: relative;
-      top: -50px;
-    }
-    .projekat-text {
-      position: relative;
-      left: -5px;
-      padding-left: 28px;
-      padding-bottom: 11px;
-      width: 430px;
-      height: 300px;
-      background: #F0F1F5;
-      box-shadow: 0 6px 2px -2px gray;
-      .projekat-descrip {
-        display: inline-block;
-        width: 115px;
-        height: 29px;
-        margin-left: 22px;
-        margin-top: 39px;
-        margin-bottom: 1px;
-      }
-      .projekat-title {
-        width: 320px;
-        height: 80px;
-        margin-bottom: 15px;
-      }
-      .projekat-about {
-        width: 400px;
-        height: 120px;
-      }
-    }
-  }
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-  .lokacija {
-    display: flex;
-    margin: 0px auto;
-    width: 1080px;
-    margin-top: 89px;
-    .lokacija-text {
-      position: relative;
-      bottom: -50px;
-      left: 50px;
-      padding-left: 28px;
-      padding-bottom: 11px;
-      width: 430px;
-      height: 300px;
-      background: #F0F1F5;
-      z-index: 1;
-      box-shadow: 0 6px 2px -2px gray;
-      .lokacija-descrip {
-        display: inline-block;
-        width: 115px;
-        height: 29px;
-        margin-left: 22px;
-        margin-top: 39px;
-        margin-bottom: 1px;
+    .projekat {
+      display: flex;
+      margin: 0px auto;
+      width: 890px;
+
+      @include for-iPadPro {
+        width: 100%;
       }
-      .lokacija-title {
-        width: 320px;
-        height: 80px;
-        margin-bottom: 20px;
+
+      @include for-phone-landscape {
+        align-items: center;
       }
-      .lokacija-about {
-        width: 400px;
-        height: 120px;
+
+      @include for-phone {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .projekat-img {
+        background: url('../../../assets/projekat-img.png') no-repeat;
+        width: 477px;
+        height: 390px;
+        position: relative;
+        top: -45px;
+
+        @include for-phone-landscape {
+          position: static;
+          width: 397px;
+        }
+
+        @include for-phone {
+          width: 100%;
+        }
+      }
+      .projekat-text {
+        position: relative;
+        left: -73px;
+        padding-left: 28px;
+        padding-bottom: 11px;
+        width: 430px;
+        height: 300px;
+        background: #F0F1F5;
+        box-shadow: 0 6px 2px -2px gray;
+
+        @include for-phone-landscape {
+          position: static;
+        }
+
+        @include for-iPad {
+          width: 380px;
+        }
+
+        @include for-sm-screen {
+          width: 320px;
+        }
+
+        @include for-phone {
+          padding-left: 14px;
+          padding-right: 14px;
+          position: relative;
+          left: 0;
+          bottom: 73px;
+        }
+
+        .projekat-descrip {
+          display: inline-block;
+          width: 115px;
+          height: 29px;
+          margin-left: 22px;
+          margin-top: 39px;
+          margin-bottom: 1px;
+        }
+        .projekat-title {
+          width: 320px;
+          height: 80px;
+          margin-bottom: 15px;
+        }
+        .projekat-about {
+          width: 400px;
+          height: 120px;
+
+          @include for-iPad {
+            width: 350px;
+            font-size: 14px;
+          }
+
+          @include for-sm-screen {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .lokacija {
+      display: flex;
+      align-items: center;
+      margin: 0px auto;
+      width: 1080px;
+      margin-top: 80px;
+
+      @include for-iPadPro {
+        width: 100%;
+      }
+
+      @include for-phone {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 0;
+      }
+
+      .lokacija-text {
+        position: relative;
+        left: 73px;
+        padding-left: 28px;
+        padding-bottom: 11px;
+        width: 430px;
+        height: 300px;
+        background: #F0F1F5;
+        z-index: 1;
+        box-shadow: 0 6px 2px -2px gray;
+
+        @include for-phone-landscape {
+          position: static;
+        }
+
+        @include for-iPad {
+          width: 380px;
+        }
+
+        @include for-sm-screen {
+          width: 320px;
+        }
+
+        @include for-phone {
+          padding-left: 14px;
+          padding-right: 14px;
+          position: relative;
+          left: 0;
+          top: 73px;
+        }
+
+        .lokacija-descrip {
+          display: inline-block;
+          width: 115px;
+          height: 29px;
+          margin-left: 22px;
+          margin-top: 39px;
+          margin-bottom: 1px;
+        }
+        .lokacija-title {
+          width: 320px;
+          height: 80px;
+          margin-bottom: 20px;
+
+          @include for-sm-screen {
+            width: 300px;
+          }
+        }
+        .lokacija-about {
+          width: 400px;
+          height: 120px;
+
+          @include for-iPad {
+            width: 350px;
+            font-size: 14px;
+          }
+
+          @include for-sm-screen {
+            width: 100%;
+          }
+        }
       }
     }
   }
   .prodaja {
     margin-top: 105px;
     background: url('../../../assets/prodaja-banner.png') no-repeat;
-    width: 1440px;
-    margin: 105px auto;
+    margin: 150px auto;
+
+    @include for-phone {
+      margin-bottom: 0;
+    }
+
     .overlay {
       z-index: 1;
-      width: 1440px;
       height: 353px;
       background: rgba(0, 0, 0, .7);
     }
     .prodaja-title {
       z-index: 2;
-      margin-left: 304px;
       margin-bottom: 35px;
+
+      @include for-iphone {
+        padding-left: 20px;
+      }
       .f {
         border-color: #fff;
       }
@@ -251,25 +494,74 @@
       }
     }
     .prodaja-content {
-      z-index: 2;
-      width: 80%;
       display: flex;
-      margin-left: 304px;
-        text-align: center;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 2;
+      display: flex;
+      text-align: center;
+
       .prodaja-item {
         width: 264px;
         height: 301px;
         background: #FFFFFF;
-        margin-right: 20px;
         box-shadow: 0 6px 2px -2px gray;
+
+        @include for-phone-landscape {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          width: 214px;
+        }
+
+        @include for-iPad {
+          width: 220px;
+        }
+
+        @include for-sm-screen {
+          width: 190px;
+          height: 260px;
+        }
+
+        @include for-phone {
+          width: 120px;
+          height: 200px;
+        }
+
+        @include for-iphone {
+          width: 115px;
+        }
+
+        @include for-sm-phone {
+          width: 105px;
+        }
+
         .prodaja-img {
           margin: 60px 100px 36px 100px;
+
+          @include for-phone-landscape {
+            margin: 0 0 35px 0;
+          }
+
+          @include for-phone {
+            margin: 0 0 15px 0;
+          }
         }
+
         .prodaja-text {
           font-size: 12px;
           line-height: 16px;
           text-align: center;
           margin-bottom: 36px;
+
+          @include for-phone {
+            margin-bottom: 25px;
+          }
+
+          @include for-sm-phone {
+            font-size: 10px;
+          }
         }
         .prodaja-link {
           text-decoration: none;
@@ -283,16 +575,37 @@
           line-height: 14px;
           color: #94949C;
           padding: 10px 19px;
+
+          @include for-phone-landscape {
+            font-size: 10px;
+          }
+
+          @include for-sm-phone {
+            width: 90px;
+            font-size: 8px;
+          }
         }
       }
     }
     .prodaja-stanovi {
       height: 995px;
-      width: 1440px;
       background: #F0F0F0;
+
+      @include for-phone {
+        height: 865px;
+      }
+
       .prodaja-stanovi-title {
-          margin-left: 304px;
-          padding-top: 220px;
+        padding-top: 220px;
+
+        @include for-phone {
+          padding-top: 150px;
+        }
+
+        @include for-iphone {
+          padding-left: 20px;
+        }
+
           .stan-tip-h1 {
             display: inline-block;
           }
@@ -300,6 +613,7 @@
       .prodaja-stan {
         margin-top: 64px;
         margin-bottom: 100px;
+
         .prodaja-stan-item {
           display: flex;
           justify-content: space-between;
@@ -309,6 +623,31 @@
           background-color: #fff;
           margin: 24px auto;
           box-shadow: 0 6px 2px -2px gray;
+
+          @include for-phone-landscape {
+            width: auto;
+          }
+
+          @include for-iPad {
+            width: 700px;
+          }
+
+          @include for-sm-screen {
+            width: 600px;
+          }
+
+          @include for-phone {
+            width: 374px;
+          }
+
+          @include for-iphone {
+            width: 355px;
+          }
+
+          @include for-sm-phone {
+            width: 335px;
+          }
+
           span {
             padding: 0px 20px;
           }
@@ -319,16 +658,38 @@
       display:flex;
       justify-content: space-around;
       .prodaja-stan-link {
-        background: url('../../../assets/prodaja-stan-link.png') no-repeat;
         width: 264px;
         height: 338px;
         box-shadow: 0 6px 2px -2px #B0B0B0;
+
+        @include for-iPad {
+          width: 210px;
+        }
+
+        @include for-sm-screen {
+          width: 190px;
+        }
+
+        @include for-phone {
+          width: 110px;
+          height: 270px;
+        }
+
         .prodaja-stan-h1{
           margin: 218px auto 16px 31px;
           font-size: 25px;
           line-height: 33px;
           color: #FFF;
+
+          @include for-iPad {
+            margin-left: 20px;
+          }
+
+          @include for-phone {
+            margin: 160px auto 16px 10px;
+          }
         }
+
         a {
           text-decoration: none;
           font-weight: bold;
@@ -336,11 +697,44 @@
           line-height: 26px;
           color: #FFF;
           margin-left: 31px;
+
+          @include for-phone-landscape {
+            font-size: 12px;
+          }
+
+          @include for-iPad {
+            margin-left: 20px;
+          }
+
+          @include for-sm-screen {
+            font-size: 8px;
+          }
+
+          @include for-phone {
+            margin-left: 10px;
+            font-size: 10px;
+          }
         }
         .arrow {
           margin-left: 17px;
           vertical-align: middle;
+
+          @include for-phone {
+            margin-left: 10px;
+          }
         }
+      }
+      .stan1 {
+        background: url('../../../assets/stan_1.png') no-repeat;
+        background-position: center;
+      }
+      .stan2 {
+        background: url('../../../assets/stan_2.png') no-repeat;
+        background-position: center;
+      }
+      .stan3 {
+        background: url('../../../assets/stan_3.png') no-repeat;
+        background-position: center;
       }
     }
   }

@@ -17,8 +17,8 @@ const HomePage = () => (
     <Header />
     <div className="hero-section">
       <div className="bg-content">
-        <h1 className="bg-title">Beli Breg <br /> Architects with a different approach</h1>
-        <Link to="/oprojektu" className="bg-button">Our Project</Link>
+        <h1 className="bg-title">Beli Breg <br /> Arhitekte sa drugacijim pristupom</h1>
+        <Link to="/oprojektu" className="bg-button">O projektu</Link>
       </div>
     </div>
     <div className="page-container">
@@ -26,11 +26,11 @@ const HomePage = () => (
       <div className="content-2-text">
         <div className="line right"></div>
         <h1 className="content-2-descrip descrip">O NAMA</h1>
-        <h1 className="content-2-title title">A whole different kind<br /> of architectual firm</h1>
+        <h1 className="content-2-title title">Arhitekte koje<br /> pomeraju granice</h1>
         <p className="content-2-par about">
-        It has survived not only five centuries,<br />
-        but also the leap into electronic typesetting,<br /> remaining essentially unchanged.<br />
-        It was popularised in the 1960s with the release
+        Naša posvećenost kvalitetu počinje od pažljivo odabranih,
+        renomiranih arhitekata koji su dizajnirali stanove za svakodnevni,
+        moderan život.<br />
         </p>
       </div>
       <div className="content-2-img">
@@ -63,46 +63,41 @@ const HomePage = () => (
       </div>
     </div>
 
-    <div className="projekat">
-      <div className="projekat-img"></div>
-      <div className="projekat-text">
-        <div className="line right"></div>
-        <div className="projekat-descrip descrip">PROJEKAT</div>
-        <h1 className="projekat-title title">A whole different kind of architectual firm</h1>
-        <p className="projekat-about about">
-          It has survived not only five centuries,
-          <br /> but also the leap into electronic typesetting,
-          <br /> remaining essentially unchanged.
-          <br /> It was popularised in the
-          <br /> 1960s with the release
-        </p>
+    <div className="info-section">
+      <div className="projekat">
+        <div className="projekat-img"></div>
+        <div className="projekat-text">
+          <div className="line right"></div>
+          <div className="projekat-descrip descrip">PROJEKAT</div>
+          <h1 className="projekat-title title">Morderni kompleks u centru Rume</h1>
+          <p className="projekat-about about">
+            Novi rezidencijalni kompleks Beli Breg oslikava viziju investitora da spoji prirodno okruženje i modernu arhitekturu čistih linija.
+          </p>
+        </div>
       </div>
-    </div>
 
-    <div className="lokacija">
-      <div className="lokacija-text">
-        <div className="line right"></div>
-        <div className="lokacija-descrip descrip">LOKACIJA</div>
-          <h1 className="lokacija-title title">A whole different kind of architectual firm</h1>
-            <p className="lokacija-about about">
-              It has survived not only five centuries,
-              <br /> but also the leap into electronic typesetting,
-              <br /> remaining essentially unchanged.
-              <br /> It was popularised in the
-              <br /> 1960s with the release
-            </p>
+      <div className="lokacija">
+        <div className="lokacija-text">
+          <div className="line right"></div>
+          <div className="lokacija-descrip descrip">LOKACIJA</div>
+            <h1 className="lokacija-title title">Pristupačna lokacija u centru Rume</h1>
+              <p className="lokacija-about about">
+                It has survived not only five centuries,
+                <br /> but also the leap into electronic typesetting,
+                <br /> remaining essentially unchanged.
+              </p>
+        </div>
+        <Map className="map" />
       </div>
-      <Map />
-    </div>
-
+      </div>
     <div className="prodaja">
       <div className="overlay">
-      <div className="prodaja-title">
+      <div className="prodaja-title page-container">
         <div className="f line right"></div>
         <h1 className="prodaja-h1 descrip">PRODAJA</h1>
         <h1 className="prodaja-name title">Nasa kvalitetna usluga</h1>
       </div>
-      <div className="prodaja-content">
+      <div className="prodaja-content page-container">
         <div className="prodaja-item">
           <img className="prodaja-img" src={prodaja1} alt="prodaja1"/>
           <p className="prodaja-text">Dizajn eksterijera</p>
@@ -121,7 +116,8 @@ const HomePage = () => (
       </div>
     </div>
     <div className="prodaja-stanovi">
-      <div className="prodaja-stanovi-title">
+      <div clasName="page-container">
+      <div className="prodaja-stanovi-title page-container">
         <div className="line right"></div>
         <div className="stan-tip-h1 descrip">PRODAJA</div>
         <div className="title">Tipovi stanbenih prostora</div>
@@ -130,25 +126,21 @@ const HomePage = () => (
         <div className="prodaja-stan-item"><span className="bold bold-no-margin">Stan 1</span><span className="grey">32m2</span><span className="grey">1050$</span></div>
         <div className="prodaja-stan-item"><span className="bold bold-no-margin">Stan 2</span><span className="grey">54m2</span><span className="grey">1050$</span></div>
         <div className="prodaja-stan-item"><span className="bold bold-no-margin">Stan 3</span><span className="grey">75m2</span><span className="grey">1050$</span></div>
-        <div className="prodaja-stan-item"><span className="bold bold-no-margin">Stan 4</span><span className="grey">120m2</span><span className="grey">1050$</span></div>
       </div>
-      <div className="prodaja-stanovi-linkovi">
-        <div className="prodaja-stan-link">
+      <div className="prodaja-stanovi-linkovi page-container">
+        <div className="prodaja-stan-link stan1">
           <h1 className="prodaja-stan-h1">Stan 1</h1>
           <Link to="">Pogledaj jos<img className="arrow" src={arrow} alt="arrow"/></Link>
         </div>
-        <div className="prodaja-stan-link">
+        <div className="prodaja-stan-link stan2">
           <h1 className="prodaja-stan-h1">Stan 2</h1>
           <Link to="">Pogledaj jos<img className="arrow" src={arrow} alt="arrow"/></Link>
         </div>
-        <div className="prodaja-stan-link">
+        <div className="prodaja-stan-link stan3">
           <h1 className="prodaja-stan-h1">Stan 3</h1>
           <Link to="">Pogledaj jos<img className="arrow" src={arrow} alt="arrow"/></Link>
         </div>
-        <div className="prodaja-stan-link">
-          <h1 className="prodaja-stan-h1">Stan 4</h1>
-          <Link to="">Pogledaj jos<img className="arrow" src={arrow} alt="arrow"/></Link>
-        </div>
+      </div>
       </div>
     </div>
     </div>

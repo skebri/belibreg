@@ -1,5 +1,57 @@
+@mixin for-sm-iphone {
+  @media only screen and (max-width: 320px) { @content; }
+}
+
+@mixin for-sm-phone {
+  @media only screen and (max-width: 360px) { @content; }
+}
+
+@mixin for-iphone {
+  @media only screen and (max-width: 375px) { @content; }
+}
+
+@mixin for-phone {
+  @media only screen and (max-width: 414px) { @content; }
+}
+
+@mixin for-sm-screen {
+  @media only screen and (max-width: 650px) { @content; }
+}
+
+@mixin for-iPad {
+  @media only screen and (max-width: 768px) { @content; }
+}
+
+@mixin for-phone-landscape {
+  @media only screen and (max-width: 825px) { @content; }
+}
+
+@mixin for-iPadPro {
+  @media only screen and (max-width: 1024px) { @content; }
+}
+
+@mixin for-md-screen {
+  @media only screen and (max-width: 1250px) { @content; }
+}
+
+@mixin for-md-bigger-screen {
+  @media only screen and (max-width: 1280px) { @content; }
+}
+
+@mixin for-bigger-screen {
+  @media only screen and (min-width: 1600px) { @content; }
+}
+
+@mixin for-big-desktop {
+  @media only screen and (min-width: 1920px) { @content; }
+}
+
+@mixin for-2k-screen {
+  @media only screen and (min-width: 2048px) { @content; }
+}
+
 .descrip {
-  font-size: 22px;
+  font-size: 30px;
   line-height: 29px;
   color: #9C9FA5;
   display: inline-block;
@@ -10,6 +62,10 @@
   line-height: 40px;
   color: #4E5054;
   margin: 15px auto auto 0px;
+
+  @include for-iphone {
+    font-size: 26px;
+  }
 }
 
 .about {
@@ -39,4 +95,28 @@
 .page-container {
   width: 834px;
   margin: 0 auto;
+
+  @include for-phone-landscape {
+    width: 800px;
+  }
+
+  @include for-iPad {
+    width: 700px;
+  }
+
+  @include for-sm-screen {
+    width: 600px;
+  }
+
+  @include for-phone {
+    width: 374px;
+  }
+
+  @include for-iphone {
+    width: 355px;
+  }
+
+  @include for-sm-phone {
+    width: 335px;
+  }
 }

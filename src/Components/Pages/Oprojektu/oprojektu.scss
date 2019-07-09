@@ -19,6 +19,7 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
+      margin-bottom: 80px;
 
       .imgs {
         padding-top: 15px;
@@ -41,7 +42,7 @@
   }
 
   .main-pic-div {
-    margin-bottom: 25px;
+    margin-bottom: 40px;
 
     .main-pic {
       box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.45);
@@ -53,7 +54,7 @@
   .povezanost {
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 150px;
     width: 100%;
     .povez-text {
       display: flex;
@@ -64,13 +65,18 @@
       }
     }
   }
+
+  .povezanost-p{
+    margin-top: 40px;
+  }
+
   .povez-tekst {
     margin-top: 25px;
   }
 
   .spec {
     display: flex;
-    margin-top: 100px;
+    margin-top: 150px;
     justify-content: space-around;
     .spec-title {
       padding-top: 100px;
@@ -79,6 +85,11 @@
       }
     }
   }
+
+  .spec-p {
+    margin-top: 40px;
+  }
+  
   .spec-tekst {
     margin-top: 25px;
   }

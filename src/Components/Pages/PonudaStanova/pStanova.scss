@@ -35,13 +35,28 @@
       }
     }
 
+    .prodaja-nav-wrapper {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+
+    .prodaja-heading{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 100px;
+    }
+
     .prodaja-cont {
       width: 950px;
+
       .prodaja-p {
-        margin-top: 50px;
+        margin-top: 40px;
       }
       .prodaja-img {
-        width: 950px;
+        width: 975px;
         height: 600px;
       }
     }
@@ -50,11 +65,8 @@
   .spec-nav {
     display: flex;
     flex-direction: column;
-    width: 106px;
-    height: 46px;
-    position: relative;
-    top: -250px;
-    left: 300px;
+    width: 200px;
+    margin-top: 40px;
     .spec-btn {
       margin: 15px;
       height: 40px;
@@ -67,22 +79,22 @@
       &.active {
           padding-left: 50px;
           font-weight: bold;
+          border-bottom: 2px solid #000;
       }
     }
   }
 
   .stanovi {
-    height: 433px;
-    width: 1440px;
-    background-color: #F0F0F0;
-    margin: 100px auto;
+    height: 400px;
+    background-color: #4D4D4D;
+    margin-top: 150px;
     padding: 100px;
     display: flex;
     .drop-down {
       .dd-main-btn {
         width: 370px;
         height: 78px;
-        background-color: #F0F1F5;
+        background-color: #FFF;
         font-size: 30px;
         line-height: 40px;
         display: flex;
@@ -135,7 +147,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-left: 300px;
+        margin-left: 30px;
         margin-bottom: 10px;
         .stan-link {
           text-decoration: none;

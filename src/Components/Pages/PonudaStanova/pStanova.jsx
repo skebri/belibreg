@@ -3,16 +3,16 @@ import './pStanova.scss';
 import Header from '../../../Common/Header/Header';
 import Footer from '../../../Common/Footer/Footer';
 import Title from '../../../Common/Title/Title';
-import lam1Diz from '../../../assets/lam1Diz.jpg';
+import lam1Diz from '../../../assets/lamela_1.png';
 import lam1Poz from '../../../assets/lam1Poz.jpg';
 import lam1Dvo from '../../../assets/lam1Dvo.jpg';
-import lam2Diz from '../../../assets/lam2Diz.jpg';
+import lam2Diz from '../../../assets/lamela_2.png';
 import lam2Poz from '../../../assets/lam2Poz.jpg';
 import lam2Dvo from '../../../assets/lam2Dvo.jpg';
-import lam3Diz from '../../../assets/lam2Diz.jpg';
+import lam3Diz from '../../../assets/lamela_3.png';
 import lam3Poz from '../../../assets/lam2Poz.jpg';
 import lam3Dvo from '../../../assets/lam2Dvo.jpg';
-import lam4Diz from '../../../assets/lam2Diz.jpg';
+import lam4Diz from '../../../assets/lamela_4.png';
 import lam4Poz from '../../../assets/lam2Poz.jpg';
 import lam4Dvo from '../../../assets/lam2Dvo.jpg';
 import { Link } from 'react-router-dom';
@@ -63,16 +63,24 @@ this.setState({
       <Title text="PONUDA STANOVA" />
       <div className="lamel">
 
-        <div className="lamela-nav">
-          <div className="lamela-nav-title">
-            <div className="line left right"></div>
-          <h1 className="descrip">PONUDA STANOVA</h1>
+        <div className="prodaja-nav-wrapper">
+          <div className="lamela-nav">
+            <div className="lamela-nav-title">
+              <div className="line left right"></div>
+            <h1 className="descrip">PONUDA STANOVA</h1>
+            </div>
+            <div className="test">
+            <button onClick={this.handleClick} value="1" className={ activeTab === "1" ? "nav-btn active" : "nav-btn"}>Lamela 1</button>
+            <button onClick={this.handleClick} value="2" className={ activeTab === "2" ? "nav-btn active" : "nav-btn"}>Lamela 2</button>
+            <button onClick={this.handleClick} value="3" className={ activeTab === "3" ? "nav-btn active" : "nav-btn"}>Lamela 3</button>
+            <button onClick={this.handleClick} value="4" className={ activeTab === "4" ? "nav-btn active" : "nav-btn"}>Lamela 4</button>
+            </div>
           </div>
-          <div className="test">
-          <button onClick={this.handleClick} value="1" className={ activeTab === "1" ? "nav-btn active" : "nav-btn"}>Lamela 1</button>
-          <button onClick={this.handleClick} value="2" className={ activeTab === "2" ? "nav-btn active" : "nav-btn"}>Lamela 2</button>
-          <button onClick={this.handleClick} value="3" className={ activeTab === "3" ? "nav-btn active" : "nav-btn"}>Lamela 3</button>
-          <button onClick={this.handleClick} value="4" className={ activeTab === "4" ? "nav-btn active" : "nav-btn"}>Lamela 4</button>
+
+          <div className="spec-nav">
+            <button value="diz" onClick={this.handleSpec} className={dpd === "diz" ? "spec-btn active" : "spec-btn" }>Dizajn</button>
+            <button value="poz" onClick={this.handleSpec} className={dpd === "poz" ? "spec-btn active" : "spec-btn" }>Pozicija</button>
+            <button value="dvo" onClick={this.handleSpec} className={dpd === "dvo" ? "spec-btn active" : "spec-btn" }>Dvoriste</button>
           </div>
         </div>
 
@@ -80,8 +88,10 @@ this.setState({
 
         {activeTab === "1" && dpd === "diz" &&
           <div className="prodaja-cont">
+            <div className="prodaja-heading">
               <div className="line left right"></div>
               <h1 className="prodaja-text descrip">Lamela 1</h1>
+            </div>
               <img className="prodaja-img" src={lam1Diz} alt="lam1-diz"/>
             <p className="prodaja-p about">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -96,8 +106,10 @@ this.setState({
 
         {activeTab === "1" && dpd === "poz" &&
           <div className="prodaja-cont">
-              <div className="line left right"></div>
-              <h1 className="prodaja-text descrip">Lamela 1</h1>
+              <div className="prodaja-heading">
+                <div className="line left right"></div>
+                <h1 className="prodaja-text descrip">Lamela 1</h1>
+              </div>
               <img className="prodaja-img" src={lam1Poz} alt="lam1-diz"/>
             <p className="prodaja-p about">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -112,8 +124,10 @@ this.setState({
 
         {activeTab === "1" && dpd === "dvo" &&
           <div className="prodaja-cont">
-              <div className="line left right"></div>
-              <h1 className="prodaja-text descrip">Lamela 1</h1>
+              <div className="prodaja-heading">
+                <div className="line left right"></div>
+                <h1 className="prodaja-text descrip">Lamela 1</h1>
+              </div>
               <img className="prodaja-img" src={lam1Dvo} alt="lam1-diz"/>
             <p className="prodaja-p about">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -130,8 +144,10 @@ this.setState({
 
         {activeTab === "2" && dpd === "diz" &&
           <div className="prodaja-cont">
-              <div className="line left right"></div>
-            <h1 className="prodaja-text descrip">Lamela 2</h1>
+              <div className="prodaja-heading">
+                <div className="line left right"></div>
+                <h1 className="prodaja-text descrip">Lamela 2</h1>
+              </div>
               <img className="prodaja-img" src={lam2Diz} alt="lam2-diz"/>
             <p className="prodaja-p about">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -146,8 +162,10 @@ this.setState({
 
         {activeTab === "2" && dpd === "poz" &&
           <div className="prodaja-cont">
-              <div className="line left right"></div>
-            <h1 className="prodaja-text descrip">Lamela 2</h1>
+              <div className="prodaja-heading">
+                <div className="line left right"></div>
+                <h1 className="prodaja-text descrip">Lamela 2</h1>
+              </div>
               <img className="prodaja-img" src={lam2Poz} alt="lam2-poz"/>
             <p className="prodaja-p about">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -162,8 +180,10 @@ this.setState({
 
         {activeTab === "2" && dpd === "dvo" &&
           <div className="prodaja-cont">
-              <div className="line left right"></div>
-            <h1 className="prodaja-text descrip">Lamela 2</h1>
+              <div className="prodaja-heading">
+                <div className="line left right"></div>
+                <h1 className="prodaja-text descrip">Lamela 2</h1>
+              </div>
               <img className="prodaja-img" src={lam2Dvo} alt="lam2-dvo"/>
             <p className="prodaja-p about">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -180,8 +200,10 @@ this.setState({
 
         {activeTab === "3" && dpd === "diz" &&
           <div className="prodaja-cont">
+            <div className="prodaja-heading">
               <div className="line left right"></div>
-            <h1 className="prodaja-text descrip">Lamela 3</h1>
+              <h1 className="prodaja-text descrip">Lamela 3</h1>
+            </div>
             <img className="prodaja-img" src={lam3Diz} alt="lam3-diz"/>
             <p className="prodaja-p about">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -196,8 +218,10 @@ this.setState({
 
         {activeTab === "3" && dpd === "poz" &&
           <div className="prodaja-cont">
+            <div className="prodaja-heading">
               <div className="line left right"></div>
-            <h1 className="prodaja-text descrip">Lamela 3</h1>
+              <h1 className="prodaja-text descrip">Lamela 3</h1>
+            </div>
             <img className="prodaja-img" src={lam3Poz} alt="lam3-poz"/>
             <p className="prodaja-p about">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -212,8 +236,10 @@ this.setState({
 
         {activeTab === "3" && dpd === "dvo" &&
           <div className="prodaja-cont">
-              <div className="line left right"></div>
-              <h1 className="prodaja-text descrip">Lamela 3</h1>
+              <div className="prodaja-heading">
+                <div className="line left right"></div>
+                <h1 className="prodaja-text descrip">Lamela 3</h1>
+              </div>
               <img className="prodaja-img" src={lam3Dvo} alt="lam3-dvo"/>
             <p className="prodaja-p about">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -230,8 +256,10 @@ this.setState({
 
       {activeTab === "4" && dpd === "diz" &&
         <div className="prodaja-cont">
-            <div className="line left right"></div>
-            <h1 className="prodaja-text descrip">Lamela 4</h1>
+            <div className="prodaja-heading">
+              <div className="line left right"></div>
+              <h1 className="prodaja-text descrip">Lamela 4</h1>
+            </div>
             <img className="prodaja-img" src={lam4Diz} alt="lam4-diz"/>
           <p className="prodaja-p about">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -246,8 +274,10 @@ this.setState({
 
       {activeTab === "4" && dpd === "poz" &&
         <div className="prodaja-cont">
-            <div className="line left right"></div>
-            <h1 className="prodaja-text descrip">Lamela 4</h1>
+            <div className="prodaja-heading">
+              <div className="line left right"></div>
+              <h1 className="prodaja-text descrip">Lamela 4</h1>
+            </div>
             <img className="prodaja-img" src={lam4Poz} alt="lam4-poz"/>
           <p className="prodaja-p about">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -263,8 +293,10 @@ this.setState({
 
       {activeTab === "4" && dpd === "dvo" &&
         <div className="prodaja-cont">
-            <div className="line left right"></div>
-          <h1 className="prodaja-text descrip">Lamela 4</h1>
+            <div className="prodaja-heading">
+              <div className="line left right"></div>
+              <h1 className="prodaja-text descrip">Lamela 4</h1>
+            </div>
           <img className="prodaja-img" src={lam4Dvo} alt="lam4-dvo"/>
           <p className="prodaja-p about">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -276,12 +308,6 @@ this.setState({
             </p>
         </div>
       }
-      </div>
-
-      <div className="spec-nav">
-        <button value="diz" onClick={this.handleSpec} className={dpd === "diz" ? "spec-btn active" : "spec-btn" }>Dizajn</button>
-        <button value="poz" onClick={this.handleSpec} className={dpd === "poz" ? "spec-btn active" : "spec-btn" }>Pozicija</button>
-        <button value="dvo" onClick={this.handleSpec} className={dpd === "dvo" ? "spec-btn active" : "spec-btn" }>Dvoriste</button>
       </div>
 
       <div className="stanovi">
