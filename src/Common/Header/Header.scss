@@ -83,5 +83,97 @@
       border-bottom: 2px solid #000;
       font-weight: bold;
     }
+
+    @include for-iPad {
+      transition: all 420ms cubic-bezier(.165,.84,.44,1);
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+      padding-top: 100px;
+      background: black;
+      left: 0;
+      top: -560px;
+      z-index: 3;
+
+      a {
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 35px;
+
+        &.active { text-decoration: none; }
+
+        &:not(:last-child) { margin-right: 0; }
+      }
+    }
+  }
+
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    float: right;
+    padding: 12px;
+    position: relative;
+    user-select: none;
+    z-index: 3;
+
+    @include for-ipad {
+      display: block;
+    }
+
+    .navicon {
+      background: black;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background .2s ease-out;
+      width: 18px;
+
+      &:before, &:after {
+        background: black;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+      }
+
+      &:before { top: 5px; }
+      &:after { top: -5px; }
+    }
+  }
+
+  .menu-btn {
+    display: none;
+
+    &:checked ~ {
+
+      nav {
+        top: 0;
+      }
+
+      .menu-icon {
+        z-index: 5;
+
+        .navicon {
+          background: transparent;
+
+          &:before { transform: rotate(-45deg); }
+          &:after { transform: rotate(45deg); }
+        }
+
+        &:not(.steps) .navicon {
+          &:before, &:after { top: 0; }
+        }
+      }
+    }
+
+    &:hover {
+      background-color: #f4f4f4;
+    }
   }
 }
