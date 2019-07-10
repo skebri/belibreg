@@ -6,7 +6,6 @@ import Title from '../../../Common/Title/Title';
 import pic1 from '../../../assets/pic1.png';
 import pic2 from '../../../assets/povezanost.png';
 import pic3 from '../../../assets/spec.png';
-import Image from 'react-image-resizer';
 
 class oprojektu extends React.Component {
   constructor(props) {
