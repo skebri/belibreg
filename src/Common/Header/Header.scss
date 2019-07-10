@@ -29,26 +29,8 @@
       padding-right: 3%;
     }
 
-    @include for-sm-screen {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      padding-top: 120px;
-      padding-left: 430px;
-    }
-
-    @include for-phone {
-      padding-left: 170px;
-      padding-top: 90px;
-    }
-
-    @include for-iphone {
-      padding-left: 140px;
-    }
-
-    @include for-sm-phone {
-      padding-left: 120px;
+    @include for-iPad {
+      padding-right: 0px;
     }
   //background-color: #F0F1F5;
   //height: 113px;
@@ -120,7 +102,7 @@
     user-select: none;
     z-index: 3;
 
-    @include for-ipad {
+    @include for-iPad {
       display: block;
     }
 
