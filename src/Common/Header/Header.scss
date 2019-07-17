@@ -4,36 +4,52 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 113px;
+  flex-direction: column;
   position: relative;
   z-index: 2;
 
-  @include for-phone {
-    height: 120px;
+  @include for-iPad {
+    flex-direction: row;
+    padding-top: 50px;
   }
-  .logo-area {
-    padding-left: 25px;
-  //height: 710px;
-  //background-color: #F0F1F5;
-  //width: 10px;
 
+  @include for-phone {
+  }
+
+  .logo-area {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @include for-iPad {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 20px;
+    }
+
+    .logo-header {
+      width: 240px;
+
+      @include for-iPad {
+        width: 100px;
+      }
+    }
   }
 
   nav {
-    padding-right: 5%;
     background-size: cover;
     flex: 1;
-    text-align: right;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    width: 100%;
+    border-bottom: 4px solid #F0F0F0;
+    background: rgba(0, 0, 0, 0.3);
 
     @include for-md-bigger-screen {
-      padding-right: 3%;
     }
 
     @include for-iPad {
-      padding-right: 0px;
     }
-  //background-color: #F0F1F5;
-  //height: 113px;
 
     a {
       text-decoration: none;
@@ -44,8 +60,8 @@
       font-weight: normal;
       font-size: 18px;
       line-height: 24px;
-      color: #000;
-      padding: 25px;
+      color: #FFF;
+      padding: 15px 30px;
 
       @include for-phone-landscape {
         padding: 15px;
@@ -62,7 +78,7 @@
       }
     }
     a:hover {
-      border-bottom: 2px solid #000;
+      border-bottom: 4px solid #F0F0F0;
       font-weight: bold;
     }
 
@@ -76,14 +92,16 @@
       width: 100%;
       text-align: center;
       padding-top: 100px;
-      background: black;
+      background: rgba(0, 0, 0, 0.3);
       left: 0;
-      top: -560px;
+      top: -580px;
       z-index: 3;
+      border-bottom: 2px solid #F0F0F0;
 
       a {
         font-size: 20px;
-        color: #fff;
+        width: 200px;
+        color: #FFF;
         margin-bottom: 35px;
 
         &.active { text-decoration: none; }
@@ -101,6 +119,7 @@
     position: relative;
     user-select: none;
     z-index: 3;
+    margin-right: 20px;
 
     @include for-iPad {
       display: block;

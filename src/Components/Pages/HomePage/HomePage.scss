@@ -6,11 +6,10 @@
   .hero-section {
     background: url('../../../assets/banner.png') 70% 15% no-repeat;
     background-size: cover;
-    width: calc(100% - 113px);
     margin-left: auto;
-    height: 850px;
+    height: 730px;
     position: relative;
-    top: -113px;
+    top: -88px;
     z-index: 1;
     box-shadow: 0 7px 2px -2px #909090;
 
@@ -38,7 +37,7 @@
     }
 
     .bg-title {
-      margin-top: 490px;
+      margin-top: 350px;
       width: 825px;
       height: 63px;
       font-weight: bold;
@@ -64,7 +63,7 @@
       }
 
       @include for-phone {
-        margin-top: 360px;
+        margin-top: 350px;
         line-height: 35px;
       }
     }
@@ -158,6 +157,7 @@
     }
     .lamele-content {
       display: flex;
+      justify-content: space-between;
       width: 100%;
 
       @include for-phone {
@@ -207,8 +207,7 @@
         }
       }
       .lamela-link:hover {
-        color: #000;
-        transition: all 0.2s ease 0s;
+        transition: all 0.25s ease 0s;
         font-size: 25px;
       }
       .lamela-arrow {
@@ -217,7 +216,7 @@
       }
       .lamele-item-1{
         background: url('../../../assets/lamela1.png') no-repeat;
-        width: 25%;
+        width: 24%;
         height: 200px;
         background-size: cover;
         padding-top: 293px;
@@ -232,7 +231,7 @@
       }
       .lamele-item-2{
         background: url('../../../assets/lamela2.png') no-repeat;
-        width: 25%;
+        width: 24%;
         height: 200px;
         background-size: cover;
         padding-top: 293px;
@@ -247,7 +246,7 @@
       }
       .lamele-item-3{
         background: url('../../../assets/lamela3.png') no-repeat;
-        width: 25%;
+        width: 24%;
         height: 200px;
         background-size: cover;
         padding-top: 293px;
@@ -262,7 +261,7 @@
       }
       .lamele-item-4{
         background: url('../../../assets/lamela4.png') no-repeat;
-        width: 25%;
+        width: 24%;
         height: 200px;
         background-size: cover;
         padding-top: 293px;

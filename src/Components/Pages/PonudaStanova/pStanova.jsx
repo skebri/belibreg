@@ -80,7 +80,7 @@ this.setState({
           <div className="spec-nav">
             <button value="diz" onClick={this.handleSpec} className={dpd === "diz" ? "spec-btn active" : "spec-btn" }>Dizajn</button>
             <button value="poz" onClick={this.handleSpec} className={dpd === "poz" ? "spec-btn active" : "spec-btn" }>Pozicija</button>
-            <button value="dvo" onClick={this.handleSpec} className={dpd === "dvo" ? "spec-btn active" : "spec-btn" }>Dvoriste</button>
+            <button value="dvo" onClick={this.handleSpec} className={dpd === "dvo" ? "spec-btn active" : "spec-btn" }>Dvorište</button>
           </div>
         </div>
 
@@ -149,13 +149,9 @@ this.setState({
                 <h1 className="prodaja-text descrip">Lamela 2</h1>
               </div>
               <img className="prodaja-img" src={lam2Diz} alt="lam2-diz"/>
-            <p className="prodaja-p about">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+              <p className="prodaja-p about">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               </p>
           </div>
         }
@@ -350,53 +346,53 @@ this.setState({
 
           {activeTab === "1" && sprat === "1" &&
           <div>
-            <div className="stan"><span className="bold">Stan 1</span><span className="grey">32 m2</span><span className="grey">1050$</span><Link className="stan-link" to="/stan/lam=1&stan=1">Detaljnije</Link></div>
-            <div className="stan"><span className="bold">Stan 2</span><span className="grey">32 m2</span><span className="grey">1050$</span><Link className="stan-link" to="">Detaljnije</Link></div>
+            <div className="stan"><span className="bold">Stan 1</span><span className="grey">32 m2</span><Link className="stan-link" to="/stan/lam=1&stan=1">Detaljnije</Link></div>
+            <div className="stan"><span className="bold">Stan 2</span><span className="grey">32 m2</span><Link className="stan-link" to="">Detaljnije</Link></div>
           </div>
           }
 
           {activeTab === "1" && sprat === "2" &&
-          <div className="stan"><span className="bold">Stan 1</span><span className="grey">32 m2</span><span className="grey">1050$</span><Link className="stan-link" to="">Detaljnije</Link></div>
+          <div className="stan"><span className="bold">Stan 1</span><span className="grey">32 m2</span><Link className="stan-link" to="">Detaljnije</Link></div>
           }
 
           {activeTab === "1" && sprat === "3" &&
           <div>
-            <div className="stan"><span className="bold">Stan 1</span><span className="grey">32 m2</span><span className="grey">1050$</span><Link className="stan-link" to="">Detaljnije</Link></div>
-            <div className="stan"><span className="bold">Stan 2</span><span className="grey">32 m2</span><span className="grey">1050$</span><Link className="stan-link" to="">Detaljnije</Link></div>
-            <div className="stan"><span className="bold">Stan 3</span><span className="grey">32 m2</span><span className="grey">1050$</span><Link className="stan-link" to="">Detaljnije</Link></div>
+            <div className="stan"><span className="bold">Stan 1</span><span className="grey">32 m2</span><Link className="stan-link" to="">Detaljnije</Link></div>
+            <div className="stan"><span className="bold">Stan 2</span><span className="grey">32 m2</span><Link className="stan-link" to="">Detaljnije</Link></div>
+            <div className="stan"><span className="bold">Stan 3</span><span className="grey">32 m2</span><Link className="stan-link" to="">Detaljnije</Link></div>
           </div>
           }
 
           {activeTab === "2" && sprat === "1" &&
-          <div className="stan"><span className="bold">Stan 1</span><span className="grey">32 m2</span><span className="grey">1050$</span><Link className="stan-link" to="">Detaljnije</Link></div>
+          <div className="stan"><span className="bold">Stan 1</span><span className="grey">32 m2</span><Link className="stan-link" to="">Detaljnije</Link></div>
           }
 
           {activeTab === "2" && sprat === "2" &&
           <div>
-            <div className="stan"><span className="bold">Stan 1</span><span className="grey">32 m2</span><span className="grey">1050$</span><Link className="stan-link" to="">Detaljnije</Link></div>
-            <div className="stan"><span className="bold">Stan 2</span><span className="grey">32 m2</span><span className="grey">1050$</span><Link className="stan-link" to="">Detaljnije</Link></div>
+            <div className="stan"><span className="bold">Stan 1</span><span className="grey">32 m2</span><Link className="stan-link" to="">Detaljnije</Link></div>
+            <div className="stan"><span className="bold">Stan 2</span><span className="grey">32 m2</span><Link className="stan-link" to="">Detaljnije</Link></div>
           </div>
           }
 
           {activeTab === "3" && sprat === "1" &&
           <div>
-            <div className="stan"><span className="bold">Stan 1</span><span className="grey">32 m2</span><span className="grey">1050$</span><Link className="stan-link" to="">Detaljnije</Link></div>
-            <div className="stan"><span className="bold">Stan 2</span><span className="grey">32 m2</span><span className="grey">1050$</span><Link className="stan-link" to="">Detaljnije</Link></div>
+            <div className="stan"><span className="bold">Stan 1</span><span className="grey">32 m2</span><Link className="stan-link" to="">Detaljnije</Link></div>
+            <div className="stan"><span className="bold">Stan 2</span><span className="grey">32 m2</span><Link className="stan-link" to="">Detaljnije</Link></div>
           </div>
           }
 
           {activeTab === "3" && sprat === "2" &&
           <div>
-            <div className="stan"><span className="bold">Stan 1</span><span className="grey">32 m2</span><span className="grey">1050$</span><Link className="stan-link" to="">Detaljnije</Link></div>
-            <div className="stan"><span className="bold">Stan 2</span><span className="grey">32 m2</span><span className="grey">1050$</span><Link className="stan-link" to="">Detaljnije</Link></div>
-            <div className="stan"><span className="bold">Stan 3</span><span className="grey">32 m2</span><span className="grey">1050$</span><Link className="stan-link" to="">Detaljnije</Link></div>
+            <div className="stan"><span className="bold">Stan 1</span><span className="grey">32 m2</span><Link className="stan-link" to="">Detaljnije</Link></div>
+            <div className="stan"><span className="bold">Stan 2</span><span className="grey">32 m2</span><Link className="stan-link" to="">Detaljnije</Link></div>
+            <div className="stan"><span className="bold">Stan 3</span><span className="grey">32 m2</span><Link className="stan-link" to="">Detaljnije</Link></div>
           </div>
           }
 
           {activeTab === "4" && sprat === "1" &&
           <div>
-            <div className="stan"><span className="bold">Stan 1</span><span className="grey">32 m2</span><span className="grey">1050$</span><Link className="stan-link" to="">Detaljnije</Link></div>
-            <div className="stan"><span className="bold">Stan 2</span><span className="grey">32 m2</span><span className="grey">1050$</span><Link className="stan-link" to="">Detaljnije</Link></div>
+            <div className="stan"><span className="bold">Stan 1</span><span className="grey">32 m2</span><Link className="stan-link" to="">Detaljnije</Link></div>
+            <div className="stan"><span className="bold">Stan 2</span><span className="grey">32 m2</span><Link className="stan-link" to="">Detaljnije</Link></div>
           </div>
           }
 

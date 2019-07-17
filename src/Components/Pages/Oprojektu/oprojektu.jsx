@@ -8,6 +8,7 @@ import pic2 from '../../../assets/pic2.png';
 import pic3 from '../../../assets/pic3.png';
 import povezanost from '../../../assets/povezanost.png';
 import spec from '../../../assets/spec.png';
+import video from '../../../assets/video.mp4';
 import Image from 'react-image-resizer';
 
 class oprojektu extends React.Component {
@@ -51,13 +52,16 @@ changePic = e =>
         </div>
 
           <p className="slider-text about">
-             Beli Breg rezidencijalni kompleks je smešten u novom centru Rume na uglu
-             ulica Matije Gubca 17. Lokacija je izuzetno dobro povezana sa centrom grada
+             Beli Breg rezidencijalni kompleks je smešten u novom centru Rume na izmedju
+             ulica Matije Gupca 17 i Iriške. Lokacija je izuzetno dobro povezana sa centrom grada
              i glavnim ulicama grada koje vode ka izlazu.
           </p>
 
           <div className="povezanost">
-            <img src={povezanost} alt="povezanost"/>
+            <video controls autoplay className="povezanost-pic">
+              <source src={video} type="video/mp4" />
+            </video>
+
             <div className="povez-text">
               <div>
                 <h1 className="descrip">POVEZANOST</h1>
@@ -67,12 +71,33 @@ changePic = e =>
             </div>
           </div>
           <div className="povezanost-p">
-            <p className="povez-tekst about">
-               Sledeći osnovnu ideju, kreirali smo bezbedan i luksuzan stambeni ambijent,
-               satkan od prirodnih materijala u kojem preovlađuju kamen i drvo, dok velike staklene površine
-               naglašavaju eleganciju životnog prostora i ispunjavaju ga svetlošću. Sledeći osnovnu ideju,
-               kreirali smo bezbedan i luksuzan stambeni ambijent, satkan od prirodnih materijala u kojem preovlađuju
-               kamen i drvo, dok velike staklene površine naglašavaju eleganciju životnog prostora i ispunjavaju ga svetlošću.</p>
+
+          <ul className="povez-tekst about">
+            <li>
+              - Ulaz:<br />
+              1. Iriška<br />
+              2. Matije Gupca<br />
+            </li>
+          </ul>
+          <ul className="povez-tekst about">
+            <li>
+              - Pogled:<br />
+              Grad<br />
+              Centar<br />
+            </li>
+          </ul>
+          <ul className="povez-tekst about">
+            <li>- Univerexport 30m</li>
+            <li>- Osnovna škola “Ivo Lola Ribar” 50m</li>
+            <li>- Osnovna škola “Zmaj Jova Jovanović” 100m</li>
+            <li>- Dečiji park Rodić parkić” 70m</li>
+            <li>- Policijska stanica 100m</li>
+            <li>- Pogled na crkvu Svetog duha i crkvu Vaznesenja gospodnjeg 120m</li>
+            <li>- Dom zdravlja Ruma 400m</li>
+            <li>- Predškolska ustanova Poletarac 400m</li>
+            <li>- Vrtić-Jaslice 500m</li>
+            <li>- Direktan prikljucak na novi auto put za Beograd-Ruma-Novi Sad, i Ruma-Šabac-Loznicu</li>
+          </ul>
           </div>
 
           <div className="spec">
@@ -82,16 +107,14 @@ changePic = e =>
             <h1 className="title">NOVI KOMPLEKS<br /> BELI BREG - RUMA</h1>
             </div>
             <div className="spec-img">
-              <img src={spec} alt="spec"/>
+              <img className="spec-pic" src={spec} alt="spec"/>
             </div>
           </div>
           <div className="spec-p">
             <p className="spec-tekst about">
                Sledeći osnovnu ideju, kreirali smo bezbedan i luksuzan stambeni ambijent,
                satkan od prirodnih materijala u kojem preovlađuju kamen i drvo, dok velike staklene površine
-               naglašavaju eleganciju životnog prostora i ispunjavaju ga svetlošću. Sledeći osnovnu ideju,
-               kreirali smo bezbedan i luksuzan stambeni ambijent, satkan od prirodnih materijala u kojem preovlađuju
-               kamen i drvo, dok velike staklene površine naglašavaju eleganciju životnog prostora i ispunjavaju ga svetlošću.</p>
+               naglašavaju eleganciju životnog prostora i ispunjavaju ga svetlošću.</p>
           </div>
 
         </div>

@@ -34,7 +34,7 @@ const Footer = () =>
       <img className="footer-logo" src={logo} alt="logo"/>
       <div className="social-icons">
         <a href="https://mobile.facebook.com/BeliBregRuma/about/?ref=page_internal&_rdc=1&_rdr"><img src={facebook} alt=""/></a>
-        <a href="#"><img src={instagram} alt=""/></a>
+        <a href="https://instagram.com/beli_breg_ruma?igshid=c3o5rjbexjkl"><img src={instagram} alt=""/></a>
       </div>
     </div>
    </div>

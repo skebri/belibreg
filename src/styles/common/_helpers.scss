@@ -55,6 +55,10 @@
   line-height: 29px;
   color: #9C9FA5;
   display: inline-block;
+
+  @include for-iPad {
+    font-size: 20px;
+  }
 }
 
 .title {
@@ -63,8 +67,11 @@
   color: #4E5054;
   margin: 15px auto auto 0px;
 
+  @include for-iPad {
+    font-size: 25px;
+  }
+
   @include for-iphone {
-    font-size: 26px;
   }
 }
 
@@ -72,6 +79,10 @@
   font-size: 18px;
   line-height: 24px;
   color: #929299;
+
+  @include for-iPad {
+    font-size: 16px;
+  }
 }
 
 .grey {

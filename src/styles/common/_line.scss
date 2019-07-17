@@ -1,3 +1,5 @@
+@import "./_helpers.scss";
+
 .line {
   position: relative;
   bottom: 5px;
@@ -5,12 +7,24 @@
   height: 0px;
   border: 2px solid #94949C;
   display: inline-block;
+
+  @include for-iPad {
+    width: 40px;
+  }
 }
 
 .right {
   margin-right: 22px;
+
+  @include for-iPad {
+    margin-right: 10px;
+  }
 }
 
 .left {
   margin-left: 22px;
+
+  @include for-iPad {
+    margin-left: 10px;
+  }
 }

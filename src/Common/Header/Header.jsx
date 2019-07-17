@@ -11,14 +11,14 @@ const Header = () => {
   return (
     <div className="header">
       <div className="logo-area">
-        <Link to="/"><img src={logo} alt="logo"/></Link>
+        <Link to="/"><img className="logo-header" src={logo} alt="logo"/></Link>
       </div>
 
       <input className="menu-btn" onChange={() => {}} type="checkbox" id="menu-btn" checked={checked} />
       <label className="menu-icon" htmlFor="menu-btn" onClick={changeChecked}><span className="navicon" /></label>
 
       <nav>
-        <Link to='/'>Pocetna strana</Link>
+        <Link to='/'>Početna strana</Link>
         <Link to='/oprojektu'>O projektu</Link>
         <Link to='/pStanova/1'>Ponuda stanova</Link>
         <Link to='/galerija'>Galerija</Link>
