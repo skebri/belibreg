@@ -12,17 +12,19 @@ const Header = () => {
     <div className="header">
       <div className="logo-area">
         <Link to="/"><img className="logo-header" src={logo} alt="logo"/></Link>
+        <p>BLIZU DALEKO ISPRED</p>
       </div>
 
       <input className="menu-btn" onChange={() => {}} type="checkbox" id="menu-btn" checked={checked} />
       <label className="menu-icon" htmlFor="menu-btn" onClick={changeChecked}><span className="navicon" /></label>
 
       <nav>
-        <Link to='/'>Početna strana</Link>
-        <Link to='/oprojektu'>O projektu</Link>
-        <Link to='/pStanova/1'>Ponuda stanova</Link>
-        <Link to='/galerija'>Galerija</Link>
-        <Link to='/kontakt'>Kontakt</Link>
+        <Link to='/oprojektu'>PROJEKAT</Link>
+        <Link to='/lokacija'>LOKACIJA</Link>
+        <Link to='/pStanova/1'>STANOVI</Link>
+        <Link to='/garaza'>GARAŽA</Link>
+        <Link to='/galerija'>GALERIJA</Link>
+        <Link to='/kontakt'>KONTAKT</Link>
       </nav>
     </div>
   )

@@ -5,6 +5,8 @@ import oprojektu from './Components/Pages/Oprojektu/oprojektu';
 import pStanova from './Components/Pages/PonudaStanova/pStanova';
 import galerija from './Components/Pages/Galerija/galerija';
 import kontakt from './Components/Pages/Kontakt/kontakt';
+import lokacija from './Components/Pages/Lokacija/lokacija';
+import garaza from './Components/Pages/Garaza/garaza';
 
 
 const App = () =>
@@ -16,6 +18,14 @@ const App = () =>
   <Route
     path="/oprojektu"
     exact component={oprojektu}
+  />
+  <Route
+    path="/lokacija"
+    exact component={lokacija}
+  />
+  <Route
+    path="/garaza"
+    exact component={garaza}
   />
   <Route
     path="/pStanova/:id"

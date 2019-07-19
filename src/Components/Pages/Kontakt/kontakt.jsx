@@ -4,26 +4,31 @@ import logo from '../../../assets/logo1.png';
 import Header from '../../../Common/Header/Header';
 import Footer from '../../../Common/Footer/Footer';
 import Title from '../../../Common/Title/Title';
+import Map from '../../../Common/Map/Map';
 
-const kontakt = () =>
-     <div className="kontakt">
-      <Header />
-      <div className="page-container">
-        <Title text="KONTAKT"/>
-        <div className="logo">
-          <img className="kont-img" src={logo} alt="logo"/>
-        </div>
-        <div className="kont-title">
-          <div className="line right"></div>
-          <h1 className="descrip">INOVATION TEAM CO D.O.O.</h1>
-        </div>
-        <div className="kontakt-items">
-          <div className="kontakt-item"><span className="bold bold-no-margin">ADRESA:</span><span className="grey">INOVATION TEAM CO D.O.O.</span></div>
-          <div className="kontakt-item"><span className="bold bold-no-margin">MATICNI BROJ:</span><span className="grey">2113321456</span></div>
-          <div className="kontakt-item"><span className="bold bold-no-margin">PIB:</span><span className="grey">2113321456</span></div>
-        </div>
+const kontakt = () => (
+  <div className="kontakt">
+    <Header />
+    <div className="page-container">
+      <Title text="KONTAKT"/>
+      <div className="logo">
+        <img className="kont-img" src={logo} alt="logo"/>
       </div>
-      <Footer />
-     </div>
+      <div className="kont-title">
+        <div className="line right"></div>
+        <h1 className="descrip">INOVATION TEAM CO D.O.O.</h1>
+      </div>
+      <div className="kontakt-items">
+        <div className="kontakt-item"><span className="bold bold-no-margin">ADRESA:</span><span className="grey">INOVATION TEAM CO D.O.O.</span></div>
+        <div className="kontakt-item"><span className="bold bold-no-margin">MATICNI BROJ:</span><span className="grey">2113321456</span></div>
+        <div className="kontakt-item"><span className="bold bold-no-margin">PIB:</span><span className="grey">2113321456</span></div>
+      </div>
+    </div>
+
+    <Map />
+
+    <Footer />
+  </div>
+);
 
 export default kontakt;

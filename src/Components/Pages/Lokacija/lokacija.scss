@@ -1,0 +1,30 @@
+.location-wrapper {
+  display: flex;
+}
+
+.location-content {
+  width: 50%;
+
+  h1 {
+    font-size: 30px;
+    margin-left: 40px;
+    width: 189px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #b2795b;
+    color: #b2795b;
+  }
+
+  p {
+    color: #777;
+    padding-left: 40px;
+    line-height: 35px;
+  }
+
+  .location-tekst {
+    color: #777;
+    padding-left: 40px;
+    line-height: 35px;
+  }
+}
