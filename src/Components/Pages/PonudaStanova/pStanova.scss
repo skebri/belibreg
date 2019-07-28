@@ -2,6 +2,7 @@
 
 .pstanova {
   font-family: Roboto SLab;
+  background-color: #eee;
   .stanovi {
     display: flex;
     justify-content: space-around;
@@ -10,29 +11,35 @@
     .stan-tip {
       height: 500px;
       width: 340px;
+      .box {
+        width: 340px;
+        height: 200px;
+        background-color: #fff;
+        padding-top: 60px;
+        .stan-about {
+          margin-left: 70px;
+          margin-top: 0px;
+          border-left: 2px solid #b2795b;
+          padding-left: 20px;
+          .stan-title {
+            font-size: 30px;
+            margin-bottom: 20px;
+          }
+          .kvadratura {
+            font-size: 20px;
+            margin-bottom: 55px;
+          }
+          .stan-link {
+            text-decoration: none;
+            color: #b2795b;
+            font-weight: bold;
+          }
+        }
+      }
       .stan-img {
         height: 320px;
         width: 340px;
         box-shadow: 7px 2px 49px -16px rgba(51,56,63,1);
-      }
-      .stan-about {
-        margin-left: 70px;
-        margin-top: 30px;
-        border-left: 2px solid #b2795b;
-        padding-left: 20px;
-        .stan-title {
-          font-size: 30px;
-          margin-bottom: 20px;
-        }
-        .kvadratura {
-          font-size: 20px;
-          margin-bottom: 55px;
-        }
-        .stan-link {
-          text-decoration: none;
-          color: #b2795b;
-          font-weight: bold;
-        }
       }
     }
   }

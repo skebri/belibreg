@@ -26,30 +26,36 @@ class pStanova extends React.Component {
 
           <div className="stan-tip">
             <img className="stan-img" src={stan1} alt="stan1"/>
+          <div className="box">
             <div className="stan-about">
               <h1 className="stan-title">Jednosobni</h1>
               <p className="kvadratura">31M2</p>
               <Link className="stan-link" to="/stan1">POGLEDAJTE</Link>
             </div>
+          </div>
           </div>
 
           <div className="stan-tip">
             <img className="stan-img" src={stan2} alt="stan2"/>
+          <div className="box">
             <div className="stan-about">
               <h1 className="stan-title">Jednosobni</h1>
               <p className="kvadratura">31M2</p>
               <Link className="stan-link" to="/stan1">POGLEDAJTE</Link>
             </div>
+          </div>
           </div>
 
           <div className="stan-tip">
             <img className="stan-img" src={stan3} alt="stan3"/>
+          <div className="box">
             <div className="stan-about">
               <h1 className="stan-title">Jednosobni</h1>
               <p className="kvadratura">31M2</p>
               <Link className="stan-link" to="/stan1">POGLEDAJTE</Link>
             </div>
           </div>
+        </div>
 
       </div>
         <Footer />
