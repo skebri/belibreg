@@ -24,7 +24,7 @@ class pStanova extends React.Component {
         <Header />
       <div className="stanovi">
 
-          <div className="stan-tip">
+          <Link className="stan-tip" to="/stan1">
             <img className="stan-img" src={stan1} alt="stan1"/>
           <div className="box">
             <div className="stan-about">
@@ -33,9 +33,9 @@ class pStanova extends React.Component {
               <Link className="stan-link" to="/stan1">POGLEDAJTE</Link>
             </div>
           </div>
-          </div>
+          </Link>
 
-          <div className="stan-tip">
+          <Link className="stan-tip" to="/stan2">
             <img className="stan-img" src={stan2} alt="stan2"/>
           <div className="box">
             <div className="stan-about">
@@ -44,9 +44,9 @@ class pStanova extends React.Component {
               <Link className="stan-link" to="/stan2">POGLEDAJTE</Link>
             </div>
           </div>
-          </div>
+          </Link>
 
-          <div className="stan-tip">
+          <Link className="stan-tip" to="/stan2">
             <img className="stan-img" src={stan3} alt="stan3"/>
           <div className="box">
             <div className="stan-about">
@@ -54,11 +54,10 @@ class pStanova extends React.Component {
               <p className="kvadratura">31M2</p>
               <Link className="stan-link" to="/stan3">POGLEDAJTE</Link>
             </div>
-          </div>
         </div>
+        </Link>
 
       </div>
-        <Footer />
       </div>
     )
   }

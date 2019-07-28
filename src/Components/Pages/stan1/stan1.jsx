@@ -77,8 +77,6 @@ handleClick = e =>
           </div>
         </div>
 
-
-        <Footer />
       </div>
     )
   }

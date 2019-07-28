@@ -1,19 +1,90 @@
 .kontakt {
   font-family: Roboto SLab;
+  background-color: #efeff0;
+
+  .kontakt-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .kontakt-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: 30px;
+      margin-left: 40px;
+      width: 189px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #b2795b;
+      color: #b2795b;
+    }
+
+    p {
+      color: #777;
+      padding-left: 40px;
+      line-height: 35px;
+    }
+  }
+
+  .pad {
+    margin-left: 10%;
+  }
+
+  .kontakt-info {
+    display: flex;
+    margin-top: 50px;
+
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      padding-left: 40px;
+
+      a {
+        color: #b2795b;
+      }
+
+      p {
+        padding-left: 0px;
+      }
+
+      img {
+      }
+    }
+  }
+
   .kont-img {
     width: 350px;
     height: 150px;
     margin-bottom: 50px;
+    padding-left: 25px;
   }
   .kont-title {
     margin-bottom: 20px;
+
+    .descrip {
+    }
   }
   .kontakt-items {
+    margin-left: 40px;
+    margin-right: 20px;
+
     .kontakt-item {
       display: flex;
       justify-content: space-between;
       padding: 15px 0px;
       width: 100%;
+      color: #b2795b;
+
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
 }

@@ -20,17 +20,16 @@ class oprojektu extends React.Component {
           <div className="o-projektu-content">
             <h1>O PROJEKTU</h1>
             <p>
-              Beli Breg rezidencijalni kompleks je smešten u novom centru Rume na izmedju
-              ulica Matije Gupca 17 i Iriške. Lokacija je izuzetno dobro povezana sa centrom grada
+              Beli Breg je rezidencijalni kompleks smešten u novom centru Rume izmedju
+              ulica Matije Gupca i Iriške. Lokacija je izuzetno dobro povezana sa centrom grada
               i glavnim ulicama grada koje vode ka izlazu.
             </p>
 
             <img src={spec} />
 
             <p>
-              Beli Breg rezidencijalni kompleks je smešten u novom centru Rume na izmedju
-              ulica Matije Gupca 17 i Iriške. Lokacija je izuzetno dobro povezana sa centrom grada
-              i glavnim ulicama grada koje vode ka izlazu.
+              Poseban značaj i pažnja pridati su projektovanju svakog stana, sa akcentom na optimizaciji strukture, kvadrature i funkcionalnosti.
+              O Belom bregu se može još mnogo toga reći, ali potpuni utisak ćete steći tek kada ga budete videli i doživeli. Dobro došli.
             </p>
           </div>
         </div>

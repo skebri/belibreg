@@ -60,7 +60,7 @@ class HomePage extends Component {
 
             </div>
               <div className="bg-content">
-                <h1 className="bg-title">Blizu. <br /> Daleko.Ispred.</h1>
+                <h1 className="bg-title">Blizu. <br /> Daleko. Ispred.</h1>
                 <Link to="/oprojektu" className="bg-button">O projektu</Link>
               </div>
           </div>

@@ -12,11 +12,11 @@ class garaza extends React.Component {
 
   render() {
     return (
-      <div className="oprojektu">
+      <div className="garaza">
         <Header />
-        <div className="op-wrapper">
-          <div className="pics-slider" />
-          <div className="o-projektu-content">
+        <div className="op-wrapper-garaza">
+          <div className="pics-slider-garaza" />
+          <div className="garaza-content">
             <h1>GARAŽA</h1>
             <p>
               Stanare Belog Breg-a imaju izuzento pristupačan prilaz u podzemne garaže, čime se dodatno doprinosi udobnosti i efikasnosti svakodnevnog života.

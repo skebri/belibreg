@@ -1,3 +1,8 @@
+.lokacija {
+  background-color: #efeff0;
+  font-size: 15px;
+}
+
 .location-wrapper {
   display: flex;
 }
@@ -19,12 +24,44 @@
   p {
     color: #777;
     padding-left: 40px;
+    padding-right: 20px;
     line-height: 35px;
   }
 
   .location-tekst {
     color: #777;
-    padding-left: 40px;
     line-height: 35px;
   }
+}
+
+ul li::before {
+  content: "\2022";
+  color: #b2795b;
+  font-weight: bold;
+  margin-left: -1em;
+  width: 1em;
+  margin-right: 10px;
+}
+
+.info-wrapper {
+  width: 100%;
+}
+
+.info-1 {
+  display: flex;
+  font-size: 15px;
+  margin-top: 50px;
+  padding-left: 60px;
+
+  .drugi {
+    padding-left: 40px;
+  }
+}
+
+.info-2 {
+  display: flex;
+  font-size: 15px;
+  margin-top: 50px;
+  padding-left: 60px;
+  padding-right: 20px;
 }

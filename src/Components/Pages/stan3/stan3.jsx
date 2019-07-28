@@ -76,9 +76,6 @@ handleClick = e =>
             <Link className="kontakt" to='/kontakt'>KONTAKTIRAJTE NAS</Link>
           </div>
         </div>
-
-
-        <Footer />
       </div>
     )
   }
