@@ -7,6 +7,9 @@ import galerija from './Components/Pages/Galerija/galerija';
 import kontakt from './Components/Pages/Kontakt/kontakt';
 import lokacija from './Components/Pages/Lokacija/lokacija';
 import garaza from './Components/Pages/Garaza/garaza';
+import stan1 from './Components/Pages/stan1/stan1';
+import stan2 from './Components/Pages/stan2/stan2';
+import stan3 from './Components/Pages/stan3/stan3';
 
 
 const App = () =>
@@ -38,6 +41,18 @@ const App = () =>
   <Route
     path="/kontakt"
     exact component={kontakt}
+  />
+  <Route
+    path="/stan1"
+    exact component={stan1}
+  />
+  <Route
+    path="/stan2"
+    exact component={stan2}
+  />
+  <Route
+    path="/stan3"
+    exact component={stan3}
   />
 </div>
 

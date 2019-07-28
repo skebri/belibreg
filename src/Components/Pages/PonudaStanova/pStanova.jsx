@@ -41,7 +41,7 @@ class pStanova extends React.Component {
             <div className="stan-about">
               <h1 className="stan-title">Jednosobni</h1>
               <p className="kvadratura">31M2</p>
-              <Link className="stan-link" to="/stan1">POGLEDAJTE</Link>
+              <Link className="stan-link" to="/stan2">POGLEDAJTE</Link>
             </div>
           </div>
           </div>
@@ -52,7 +52,7 @@ class pStanova extends React.Component {
             <div className="stan-about">
               <h1 className="stan-title">Jednosobni</h1>
               <p className="kvadratura">31M2</p>
-              <Link className="stan-link" to="/stan1">POGLEDAJTE</Link>
+              <Link className="stan-link" to="/stan3">POGLEDAJTE</Link>
             </div>
           </div>
         </div>
