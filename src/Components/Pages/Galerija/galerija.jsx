@@ -31,6 +31,7 @@ class galerija extends React.Component {
     return (
       <div className="gal">
         <Header />
+      <div className="bcg">
         <button className="gal-btn" type="button" onClick={() => this.setState({ isOpen: true })}>
           ZA VISE SLIKA KLIKNITE OVDE
         </button>
@@ -53,8 +54,9 @@ class galerija extends React.Component {
             }
           />
         )}
-        <Footer />
+
       </div>
+    </div>
     );
   }
 }
