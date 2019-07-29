@@ -3,20 +3,61 @@ import './galerija.scss';
 import pic1 from '../../../assets/pic1.png';
 import pic2 from '../../../assets/povezanost.png';
 import pic3 from '../../../assets/spec.png';
-import Gallery from 'react-photo-gallery';
-import { photos } from '../../../assets/gallery/photos';
 import Header from '../../../Common/Header/Header';
 import Footer from '../../../Common/Footer/Footer';
-import Title from '../../../Common/Title/Title';
+import Lightbox from "react-image-lightbox";
+import "react-image-lightbox/style.css";
 
 
-const galerija = () =>
-  <div className="galerija">
-    <Header />
-    <Title text="GALERIJA" />
-    <Gallery photos={photos} />
-    <Footer />
-  </div>
+const images = [
+  pic1,
+  pic2,
+  pic3
+];
+
+class galerija extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      photoIndex: 0,
+      isOpen: false
+    };
+  }
+
+  render() {
+    const { photoIndex, isOpen } = this.state;
+
+    return (
+      <div className="gal">
+        <Header />
+        <button className="gal-btn" type="button" onClick={() => this.setState({ isOpen: true })}>
+          ZA VISE SLIKA KLIKNITE OVDE
+        </button>
+
+        {isOpen && (
+          <Lightbox
+            mainSrc={images[photoIndex]}
+            nextSrc={images[(photoIndex + 1) % images.length]}
+            prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+            onCloseRequest={() => this.setState({ isOpen: false })}
+            onMovePrevRequest={() =>
+              this.setState({
+                photoIndex: (photoIndex + images.length - 1) % images.length
+              })
+            }
+            onMoveNextRequest={() =>
+              this.setState({
+                photoIndex: (photoIndex + 1) % images.length
+              })
+            }
+          />
+        )}
+        <Footer />
+      </div>
+    );
+  }
+}
 
 
 export default galerija;

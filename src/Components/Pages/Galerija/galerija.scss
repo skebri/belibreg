@@ -1,0 +1,25 @@
+.gal {
+  .gal-btn {
+    width: 600px;
+    height: 100px;
+    margin-left: 33%;
+    margin-top: 200px;
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    border-left: 3px solid #b2795b;
+    border-right: 3px solid #b2795b;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  .gal-btn:hover {
+    border: none;
+    border-top: 3px solid #b2795b;
+    border-bottom: 3px solid #b2795b;
+    transition: all 0.2s ease-in-out 0s;
+    border-radius: 20px;
+  }
+  .gal-btn:focus {
+    outline: none;
+  }
+}
