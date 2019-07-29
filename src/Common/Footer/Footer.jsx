@@ -25,9 +25,9 @@ const Footer = () =>
     <div className="footer-nav">
       <h1 className="footer-h1">Meni</h1>
       <Link className="footer-link" to="/oprojektu">O projektu</Link>
-      <Link className="footer-link" to="/pStanova">Ponuda stanova</Link>
+      <Link className="footer-link" to="/pStanova/1">Ponuda stanova</Link>
       <Link className="footer-link" to="/galerija">Galerija</Link>
-      <Link className="footer-link" to="/investitor">Investitor</Link>
+      <Link className="footer-link" to="/lokacija">Lokacija</Link>
       <Link className="footer-link" to="/kontakt">Kontakt</Link>
     </div>
     <div className="footer-social">
